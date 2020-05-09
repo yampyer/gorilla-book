@@ -4,4 +4,6 @@
     <string name="share">Share</string>
     <string name="hello_jane">Hello Jane</string>
     <string name="what_on_your_mind">What\'s on your mind?</string>
+    <string name="no_feed_available">No feed available at the moment</string>
+    <string name="today_date_format">DDDD, MMMM dd</string>
 </resources>
