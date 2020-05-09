@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GorillaBook</string>
+    <string name="create_post">Create Post</string>
+    <string name="share">Share</string>
+    <string name="hello_jane">Hello Jane</string>
+    <string name="what_on_your_mind">What\'s on your mind?</string>
+</resources>
