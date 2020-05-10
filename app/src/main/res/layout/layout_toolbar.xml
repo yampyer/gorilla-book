@@ -48,9 +48,9 @@
 
     <ImageView
         android:id="@+id/back_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
         android:src="@drawable/ic_back"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"

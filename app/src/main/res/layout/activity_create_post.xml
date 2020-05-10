@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jeanpigomez.gorillabook.ui.createpost.CreatePostViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_area_what_on_your_mind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/what_on_your_mind"
+            android:theme="@style/TextLabel"
+            app:hintTextAppearance="@style/HintText"
+            app:counterEnabled="true"
+            app:counterMaxLength="150"
+            app:layout_constraintHeight_min="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="150" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivPicture"
+            android:layout_width="@dimen/full_width"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_area_what_on_your_mind"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/btn_add_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_photo"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/btn_background"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_goneMarginTop="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPicture" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

@@ -5,5 +5,8 @@
     <string name="hello_jane">Hello Jane</string>
     <string name="what_on_your_mind">What\'s on your mind?</string>
     <string name="no_feed_available">No feed available at the moment</string>
-    <string name="today_date_format">DDDD, MMMM dd</string>
+    <string name="today_date_format">EEEE, MMMM d</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="please_enter_post_content">Please enter something to post</string>
 </resources>
